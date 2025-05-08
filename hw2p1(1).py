@@ -43,7 +43,7 @@ age_noisy_i, _   = dp_histogram(df["age"], bins_age, eps_age_i)
 wc_noisy_i, lab_w = categorical_dp_hist(df["workclass"], eps_wc_i)
 ed_noisy_i, lab_e = categorical_dp_hist(df["education"], eps_ed_i)
 
-print("Scenario (i) — 每个属性 ε=1, Laplace scale b=1")
+print("Scenario (i) — each attribute ε=1, Laplace scale b=1")
 print("Noisy age histogram:    ", age_noisy_i.astype(int))
 print("Noisy workclass counts: ", dict(zip(lab_w, wc_noisy_i.astype(int))))
 print("Noisy education counts: ", dict(zip(lab_e, ed_noisy_i.astype(int))))
